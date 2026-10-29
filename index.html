@@ -45,7 +45,7 @@ toggle.addEventListener('click',()=>{const open=nav.classList.toggle('open');tog
 nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.textContent='☰'}));
 document.getElementById('year').textContent=new Date().getFullYear();
 // Remplacez par le numéro de l'apiculteur au format international, sans +, espaces ni tirets (ex. 33612345678).
-const whatsappNumber='33XXXXXXXXX';
+const whatsappNumber='33767685538';
 document.querySelectorAll('[data-whatsapp]').forEach(a=>{a.href=`https://wa.me/${whatsappNumber}?text=${encodeURIComponent("Bonjour, je suis intéressé(e) par le miel de La Ruche d’Ali-Baba. Pouvez-vous m’indiquer le prix, la disponibilité et les possibilités de retrait près de Roanne ?")}`;a.addEventListener('click',e=>{if(whatsappNumber.includes('X')){e.preventDefault();alert('Pour activer WhatsApp, remplacez le numéro 33XXXXXXXXX dans le code HTML par le numéro de l’apiculteur.')}})});
 </script>
 </body></html>
